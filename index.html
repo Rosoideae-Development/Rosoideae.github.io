@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSO - Valorant Division</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../GSAP/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://cdn.discordapp.com/attachments/1383922521249677362/1404289385880621138/rosored.png?ex=689aa5e8&is=68995468&hm=e2c16ce55518c2767a25c3b60d941ee8eea7bb1b2a9bad2db39b0fd91b8fa9d2&" alt="ROSO Logo" class="header-logo">
+            <span class="logo-text">Rosoideae</span>
+        </div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#teams">Teams</a>
+            <a href="#matches">Matches</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="watch-live">
+            <svg class="tv-icon" viewBox="0 0 24 24">
+                <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5l-1 3v1h8v-1l-1-3h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+            Watch Live
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="rose-background"></div>
+            <div class="rose-petal"></div>
+            <div class="rose-petal"></div>
+            <div class="rose-petal"></div>
+            
+            <div class="hero-content">
+                <img src="https://cdn.discordapp.com/attachments/1383922521249677362/1404289385880621138/rosored.png?ex=689aa5e8&is=68995468&hm=e2c16ce55518c2767a25c3b60d941ee8eea7bb1b2a9bad2db39b0fd91b8fa9d2&" alt="ROSO Main Logo" class="main-logo">
+                <h1 class="hero-title">ROSO</h1>
+                <p class="hero-subtitle">Valorant Division</p>
+                <p class="hero-description">We're here to show everyone what we're made of. No fancy talk, just results.</p>
+                <div class="hero-buttons">
+                                    <button class="cta-button primary">Try Out</button>
+                <button class="cta-button secondary">See Us Play</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About ROSO</h2>
+                <p>Yap yap yap.</p>
+                <div class="about-features">
+                    <div class="feature"><h3>Something</h3><p>Yap yap yap.</p></div>
+                    <div class="feature"><h3>Different</h3><p>Yap yap yap..</p></div>
+                    <div class="feature"><h3>Here</h3><p>Yap yap yap.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teams" class="content-section">
+            <div class="container">
+                <h2>Our Teams</h2>
+                <p>We've got different teams and different skill levels. Each team has its own vibe and style.</p>
+                <div class="teams-container">
+                    <div class="team-section">
+                        <h3>Main Team</h3>
+                        <p>Our competitive team that plays in tournaments and leagues.</p>
+                        <div class="team-grid" id="main-team-grid">
+                            <div class="loading-indicator">Getting the main squad together...</div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-section">
+                        <h3>Academy Teams</h3>
+                        <p>Up-and-coming players who are learning the fundamentals and improving their playstyles.</p>
+                        <div class="team-grid" id="academy-team-grid">
+                            <div class="loading-indicator">Getting the academy squad together...</div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-section">
+                        <h3>Roso Teams</h3>
+                        <p>Players with something to prove.</p>
+                        <div class="team-grid" id="scrim-team-grid">
+                            <div class="loading-indicator">Getting the scrim squad together...</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-controls">
+                    <button id="refresh-teams" class="refresh-btn">Refresh All Teams</button>
+                    <div class="discord-status">
+                        <span id="discord-status-text">Discord: Connecting...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="matches" class="content-section">
+    <div class="container">
+        <h2>Recent Matches</h2>
+        <p>Here's what we've been up to lately. We win some, we lose some, but we always improve.</p>
+        <div class="matches-grid">
+            <div class="match-card win-outline"><h3>ROSO vs Team Alpha</h3><p>13-7</p><span class="match-date">Last Week</span></div>
+            <div class="match-card win-outline"><h3>ROSO vs Team Beta</h3><p>13-9</p><span class="match-date">2 Weeks Ago</span></div>
+            <div class="match-card loss-outline"><h3>ROSO vs Team Gamma</h3><p>11-13</p><span class="match-date">3 Weeks Ago</span></div>
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="content-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Want to hang out? Got questions? Just want to see what we're about? Come chat with us.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Discord</h3>
+                <p>Come hang out with us</p>
+                <button class="contact-button" onclick="window.open('https://discord.gg/roso')">Join Discord</button>
+            </div>
+
+            <div class="contact-item">
+                <h3>Twitch</h3>
+                <p>Watch our live streams</p>
+                <button class="contact-button" onclick="window.open('_twitch_', '_blank')">Watch</button>
+            </div>
+
+            <div class="contact-item">
+                <h3>Twitter</h3>
+                <p>See what we're up to</p>
+                <button class="contact-button" onclick="window.open('_twitter_', '_blank')">Follow</button>
+            </div>
+
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>management@rosoesports.com</p>
+                <button class="contact-button" onclick="window.open('_email_', '_blank')">Send Email</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Discord</a>
+            <a href="#" class="social-icon">YouTube</a>
+            <a href="#" class="social-icon">Twitch</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../GSAP/animations.js"></script>
+    <script src="../GSAP/discord-api.js"></script>
+</body>
+</html>
